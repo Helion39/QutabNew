@@ -61,7 +61,7 @@ export default function Hero() {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                Memberdayakan peternak lokal sambil menunaikan kewajiban suci Anda. Mari bergabung menebar kebaikan di seluruh nusantara dan untuk Palestina Idul Adha ini.
+                Memberdayakan peternak lokal sambil menunaikan kewajiban suci Anda. Mari bergabung menebar kebaikan di seluruh nusantara Idul Adha ini.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-8">

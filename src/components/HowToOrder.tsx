@@ -31,7 +31,7 @@ export default function HowToOrder() {
     <div className="py-20 bg-[#ffafcc] border-b-4 border-black overflow-hidden" id="how-to-order">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center mb-16" data-aos="fade-down">
-          <h2 className="text-5xl font-black text-black uppercase tracking-tighter">
+          <h2 className="text-5xl font-black text-black uppercase tracking-tighter" style={{ fontFamily: 'var(--font-gangnam)' }}>
             Cara Pesan
           </h2>
           <p className="text-black font-bold text-xl mt-4 bg-white inline-block px-4 py-2 border-2 border-black shadow-[4px_4px_0px_0px_#000000]">
@@ -51,9 +51,8 @@ export default function HowToOrder() {
                 data-aos="fade-up"
                 data-aos-delay={index * 200}
               >
-                <div className={`w-24 h-24 bg-white border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_#000000] mb-6 transform hover:${
-                  index % 2 === 0 ? 'rotate-3' : '-rotate-3'
-                } transition-transform`}>
+                <div className={`w-24 h-24 bg-white border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_#000000] mb-6 transform hover:${index % 2 === 0 ? 'rotate-3' : '-rotate-3'
+                  } transition-transform`}>
                   <MaterialIcon icon={step.icon} className="text-5xl text-black" />
                 </div>
                 <div className="bg-white border-2 border-black p-4 shadow-[4px_4px_0px_0px_#000000] w-full">

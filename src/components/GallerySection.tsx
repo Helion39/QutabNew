@@ -33,6 +33,7 @@ export default function GallerySection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2
           className="text-5xl font-black text-black text-center mb-10 uppercase tracking-tighter"
+          style={{ fontFamily: 'var(--font-gangnam)' }}
           data-aos="fade-up"
         >
           Momen Kebahagiaan

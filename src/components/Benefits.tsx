@@ -9,6 +9,7 @@ export default function Benefits() {
         <div className="mb-10 text-center max-w-4xl mx-auto">
           <h2
             className="text-4xl md:text-6xl font-black text-black mb-4 tracking-tighter leading-none uppercase"
+            style={{ fontFamily: 'var(--font-gangnam)' }}
             data-aos="fade-down"
           >
             Kenapa Memilih{' '}

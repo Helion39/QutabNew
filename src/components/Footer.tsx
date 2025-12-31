@@ -96,7 +96,7 @@ export default function Footer() {
               </li>
               <li>
                 <a className="hover:text-[#ffafcc] hover:underline decoration-2 underline-offset-4 transition-all" href="#">
-                  Qurban Palestina
+                  Qurban Pedesaan
                 </a>
               </li>
             </ul>

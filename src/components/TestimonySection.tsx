@@ -9,8 +9,8 @@ export default function TestimonySection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-20 lg:py-28">
         {/* Header */}
         <div className="text-center mb-12" data-aos="fade-up">
-          <h2 className="text-5xl md:text-7xl font-black text-black mb-6 tracking-tighter leading-none uppercase">
-            Testimoni Muzakki
+          <h2 className="text-5xl md:text-7xl font-black text-black mb-6 tracking-tighter leading-none uppercase" style={{ fontFamily: 'var(--font-gangnam)' }}>
+            Testimoni
           </h2>
         </div>
 

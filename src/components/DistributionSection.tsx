@@ -2,7 +2,7 @@ import MaterialIcon from './MaterialIcon';
 
 export default function DistributionSection() {
   const locations = [
-    'Palestina', 'Lampung', 'Padang Lawas U.', 'Banten', 'Bogor', 'Pangandaran',
+    'Lampung', 'Padang Lawas U.', 'Banten', 'Bogor', 'Pangandaran',
     'Gunung Sindur', 'Bandung Barat', 'Boyolali', 'Wonosobo', 'Ungaran', 'Magelang',
     'Cilacap', 'Kediri', 'Jember', 'Trenggalek', 'Magetan', 'Situbondo',
     'Bangkalan', 'Bojonegoro', 'Mataram', 'Sumbawa', 'Dompu', 'Bima', 'NTT'
@@ -27,7 +27,7 @@ export default function DistributionSection() {
               Cakupan Luas
             </span>
 
-            <h2 className="md:text-6xl font-black mt-4 mb-6 text-black uppercase tracking-tighter leading-none text-[40px]">
+            <h2 className="md:text-6xl font-black mt-4 mb-6 text-black uppercase tracking-tighter leading-none text-[40px]" style={{ fontFamily: 'var(--font-gangnam)' }}>
               Mendistribusikan <br />
               <span className="text-[#ffafcc]" style={{ WebkitTextStroke: '1px black' }}>
                 Kebahagiaan
@@ -47,7 +47,7 @@ export default function DistributionSection() {
                   25+ Lokasi
                 </span>
                 <span className="text-black font-bold text-sm sm:text-base uppercase tracking-wider">
-                  Di Seluruh Indonesia & Palestina
+                  Di Seluruh Indonesia
                 </span>
               </div>
             </div>

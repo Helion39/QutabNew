@@ -32,9 +32,8 @@ export default function MissionSection() {
               Misi Kami
             </div>
 
-            <h2 className="lg:text-6xl font-black text-black leading-none uppercase tracking-tighter text-[41px]">
-              Menghubungkan{' '}
-              <span className="bg-black text-white px-2">Donatur</span> Kota dengan Masyarakat Desa
+            <h2 className="lg:text-6xl font-black text-black leading-none uppercase tracking-tighter text-[41px]" style={{ fontFamily: 'var(--font-gangnam)' }}>
+              Menghubungkan Donatur Kota dengan Masyarakat Desa
             </h2>
 
             <p className="text-black text-lg font-medium border-l-4 border-black pl-4">

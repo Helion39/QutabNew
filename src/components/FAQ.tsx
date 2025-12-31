@@ -4,7 +4,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'Kapan batas waktunya?',
-      answer: 'Batas waktu pemesanan Qurban biasanya 1 hari sebelum sholat Idul Adha. Namun, untuk distribusi Palestina, kami menyarankan pemesanan minimal 3 hari sebelumnya.'
+      answer: 'Batas waktu pemesanan Qurban biasanya 1 hari sebelum sholat Idul Adha. Untuk distribusi ke daerah terpencil, kami menyarankan pemesanan minimal 3 hari sebelumnya.'
     },
     {
       question: 'Apakah saya akan mendapatkan laporan?',
@@ -12,7 +12,7 @@ export default function FAQ() {
     },
     {
       question: 'Bisakah saya memilih lokasi?',
-      answer: 'Secara default, kami mendistribusikan ke daerah yang paling membutuhkan berdasarkan survei lapangan kami. Namun, Anda dapat memilih wilayah luas seperti "Pelosok Jawa" atau "Palestina" saat memilih produk Anda.'
+      answer: 'Secara default, kami mendistribusikan ke daerah yang paling membutuhkan berdasarkan survei lapangan kami. Namun, Anda dapat memilih wilayah luas seperti "Pelosok Jawa" atau "Daerah Terpencil" saat memilih produk Anda.'
     },
     {
       question: 'Apakah hewannya sehat?',
@@ -25,6 +25,7 @@ export default function FAQ() {
       <div className="mx-auto max-w-3xl px-6 lg:px-8">
         <h2
           className="text-5xl font-black text-black text-center mb-10 uppercase tracking-tighter"
+          style={{ fontFamily: 'var(--font-gangnam)' }}
           data-aos="fade-down"
         >
           FAQ
