@@ -5,8 +5,8 @@ export default function WhatIsQutab() {
                 {/* Header */}
                 <div className="text-center mb-12" data-aos="fade-up">
                     <h2
-                        className="text-5xl md:text-7xl font-black text-black mb-6 tracking-tighter leading-none uppercase"
-                        style={{ fontFamily: 'var(--font-gangnam)' }}
+                        className="text-4xl md:text-6xl font-black mb-4 tracking-tighter leading-none uppercase"
+                        style={{ fontFamily: 'var(--font-gangnam)', color: '#ff6b9d' }}
                     >
                         Apa itu Qurban Tanpa Batas?
                     </h2>

@@ -27,9 +27,9 @@ export default function DistributionSection() {
               Cakupan Luas
             </span>
 
-            <h2 className="md:text-6xl font-black mt-4 mb-6 text-black uppercase tracking-tighter leading-none text-[40px]" style={{ fontFamily: 'var(--font-gangnam)' }}>
+            <h2 className="md:text-6xl font-black mt-4 mb-6 uppercase tracking-tighter leading-none text-[40px]" style={{ fontFamily: 'var(--font-gangnam)', color: '#ffa2e3' }}>
               Mendistribusikan <br />
-              <span className="text-[#ffafcc]" style={{ WebkitTextStroke: '1px black' }}>
+              <span style={{ color: 'white' }}>
                 Kebahagiaan
               </span>
             </h2>

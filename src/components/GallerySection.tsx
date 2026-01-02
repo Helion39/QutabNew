@@ -32,8 +32,8 @@ export default function GallerySection() {
     <div className="py-20 bg-[#fffbef] border-b-4 border-black lg:min-h-screen lg:flex lg:items-center" id="gallery">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2
-          className="text-5xl font-black text-black text-center mb-10 uppercase tracking-tighter"
-          style={{ fontFamily: 'var(--font-gangnam)' }}
+          className="text-5xl font-black text-center mb-10 uppercase tracking-tighter"
+          style={{ fontFamily: 'var(--font-gangnam)', color: '#ffa2e3' }}
           data-aos="fade-up"
         >
           Momen Kebahagiaan

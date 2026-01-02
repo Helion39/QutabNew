@@ -8,12 +8,12 @@ export default function Benefits() {
         {/* Header */}
         <div className="mb-10 text-center max-w-4xl mx-auto">
           <h2
-            className="text-4xl md:text-6xl font-black text-black mb-4 tracking-tighter leading-none uppercase"
-            style={{ fontFamily: 'var(--font-gangnam)' }}
+            className="text-4xl md:text-6xl font-black mb-4 tracking-tighter leading-none uppercase"
+            style={{ fontFamily: 'var(--font-gangnam)', color: '#ff5990' }}
             data-aos="fade-down"
           >
             Kenapa Memilih{' '}
-            <span className="relative inline-block px-3 bg-[#ffafcc] border-3 border-black shadow-[3px_3px_0px_0px_#000000] transform -rotate-1">
+            <span className="relative inline-block px-3 bg-[#ffafcc] border-3 border-black shadow-[3px_3px_0px_0px_#000000] transform -rotate-1" style={{ color: 'white' }}>
               Qurban Tanpa Batas?
             </span>
           </h2>

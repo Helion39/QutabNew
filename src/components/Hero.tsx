@@ -41,16 +41,13 @@ export default function Hero() {
               </span>
 
               <h1
-                className="text-[#ff5990] text-6xl lg:text-8xl font-black leading-none tracking-tighter uppercase"
-                style={{ fontFamily: 'var(--font-gangnam)', WebkitTextStroke: '2px black' }}
+                className="text-6xl lg:text-8xl font-black leading-none tracking-tighter uppercase"
+                style={{ fontFamily: 'var(--font-gangnam)', color: '#ff5990' }}
                 data-aos="slide-up"
                 data-aos-duration="1000"
               >
                 Qurban <br />
-                <span
-                  className="text-[#ffa2e3]"
-                  style={{ WebkitTextStroke: '2px black' }}
-                >
+                <span style={{ color: '#ffa2e3' }}>
                   Tanpa Batas
                 </span>
               </h1>

@@ -32,7 +32,7 @@ export default function MissionSection() {
               Misi Kami
             </div>
 
-            <h2 className="lg:text-6xl font-black text-black leading-none uppercase tracking-tighter text-[41px]" style={{ fontFamily: 'var(--font-gangnam)' }}>
+            <h2 className="lg:text-6xl font-black leading-none uppercase tracking-tighter text-[41px]" style={{ fontFamily: 'var(--font-gangnam)', color: '#3a8dbd' }}>
               Menghubungkan Donatur Kota dengan Masyarakat Desa
             </h2>
 

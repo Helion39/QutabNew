@@ -71,9 +71,9 @@ export default function ProductsPreview() {
           data-aos="fade-down"
         >
           <div className="max-w-xl">
-            <h2 className="text-5xl md:text-6xl font-black text-black uppercase tracking-tighter leading-none mb-4" style={{ fontFamily: 'var(--font-gangnam)' }}>
+            <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-4" style={{ fontFamily: 'var(--font-gangnam)', color: '#ff6b9d' }}>
               Pilih Hewan <br />
-              <span className="bg-[#ffafcc] px-2 border-2 border-black shadow-[4px_4px_0px_0px_#000000] inline-block transform rotate-1">
+              <span className="bg-[#ffafcc] px-2 border-2 border-black shadow-[4px_4px_0px_0px_#000000] inline-block transform rotate-1" style={{ color: 'white' }}>
                 Qurban Anda
               </span>
             </h2>
