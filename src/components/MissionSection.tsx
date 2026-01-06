@@ -11,9 +11,9 @@ export default function MissionSection() {
             data-aos="slide-right"
           >
             <img
-              alt="Asian farmer smiling while feeding cattle in a green field"
+              alt="Indonesian farmer smiling with farm animals near a rustic shack"
               className="object-cover w-full h-full border-2 border-black hover:scale-105 transition-all duration-500"
-              src="https://images.unsplash.com/photo-1634910958343-2f44bac612ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMGZhcm1lciUyMGNhdHRsZXxlbnwxfHx8fDE3NjU3OTc3MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="/indonesian_farmer_with_animals.webp"
             />
             <div
               className="absolute -bottom-6 -right-6 bg-white border-4 border-black p-4 max-w-xs shadow-[4px_4px_0px_0px_#000000] hidden md:block z-10"
@@ -21,46 +21,56 @@ export default function MissionSection() {
               data-aos-delay="500"
             >
               <p className="text-black font-bold italic text-sm">
-                "Melalui Qurban Anda, penghidupan kami meningkat." <br />- Pak Asep, Peternak
+                "Ketika ibadah dititipkan pada yang amanah, hati pun menjadi lebih tenang."
               </p>
             </div>
           </div>
 
           {/* Content */}
-          <div className="flex flex-col gap-6 pt-10 lg:pt-0" data-aos="slide-left">
-            <div className="inline-flex items-center gap-2 text-black font-black uppercase tracking-wide text-lg bg-[#ffafcc] w-fit px-3 border-2 border-black shadow-[4px_4px_0px_0px_#000000]">
-              Misi Kami
-            </div>
-
-            <h2 className="lg:text-6xl font-black leading-none uppercase tracking-tighter text-[41px]" style={{ fontFamily: 'var(--font-gangnam)', color: '#3a8dbd' }}>
-              Menghubungkan Donatur Kota dengan Masyarakat Desa
+          <div className="flex flex-col pt-10 lg:pt-0" data-aos="slide-left">
+            <h2 className="lg:text-6xl font-black leading-tight uppercase tracking-tighter text-[40px] mb-2" style={{ fontFamily: 'var(--font-gangnam)', color: '#ffa2e3' }}>
+              Tentang Kami
             </h2>
 
-            <p className="text-black text-lg font-medium border-l-4 border-black pl-4">
-              Qurban Tanpa Batas lebih dari sekadar platform untuk memesan hewan qurban. Kami adalah gerakan untuk memberdayakan peternak lokal di seluruh Indonesia.
+            <div className="inline-flex items-center gap-2 text-black font-black uppercase tracking-wide text-base bg-[#ffafcc] w-fit px-3 py-1 border-2 border-black shadow-[4px_4px_0px_0px_#000000] mb-8">
+              ZIS Indosat - Meluaskan dan Mengabadikan Kebaikan
+            </div>
+
+            <p className="text-black text-base font-medium border-l-4 border-black pl-4 mb-4">
+              ZIS Indosat telah lebih dari <strong>20 tahun</strong> hadir untuk menjaga amanah ZIS umat dengan pengelolaan yang bertanggung jawab, profesional, dan penuh kepedulian.
             </p>
 
-            <p className="text-black text-lg font-medium border-l-4 border-black pl-4">
-              Dengan menghubungkan Anda langsung dengan peternak, kami menghilangkan perantara, memastikan harga yang lebih baik untuk Anda dan margin yang lebih tinggi bagi mereka.
+            <p className="text-black text-base font-medium border-l-4 border-black pl-4 mb-4">
+              Melalui program <strong>QUTAB (Qurban Tanpa Batas)</strong>, kami membantu Anda menunaikan ibadah qurban dengan cara yang lebih mudah, murah, dan berdampak—tanpa mengurangi esensi syariahnya. Setiap hewan dipastikan sehat dan layak, setiap proses dijalankan sesuai ketentuan, dan setiap amanah disalurkan tepat sasaran.
             </p>
 
-            <div className="grid grid-cols-2 gap-6 mt-4">
+            <p className="text-black text-base font-medium border-l-4 border-black pl-4 mb-4">
+              Kami percaya, qurban bukan sekadar menyembelih hewan, tetapi tentang menyampaikan niat baik hingga benar-benar dirasakan manfaatnya oleh saudara-saudara kita di penjuru Indonesia.
+            </p>
+
+            <div className="bg-[#fffbef] border-2 border-black p-4 shadow-[4px_4px_0px_0px_#000000] mt-2">
+              <p className="text-black text-sm font-medium">
+                Untuk menjaga kualitas dan kepercayaan, ZIS Indosat bekerja sama dengan <strong>PT SCUI</strong> sebagai pelaksana program, serta didukung fasilitas <strong>Tabung Qurban BMT Berkah Nurul Taqwa (BBNT)</strong>, agar ibadah Anda terkelola dengan rapi, transparan, dan dapat dipertanggungjawabkan.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
               <div
-                className="flex flex-col gap-2 p-4 bg-[#fffbef] border-2 border-black shadow-[4px_4px_0px_0px_#000000] hover:bg-[#ffafcc] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_#000000] transition-all"
+                className="flex flex-col gap-2 p-4 bg-[#ffafcc] border-2 border-black shadow-[4px_4px_0px_0px_#000000]"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <MaterialIcon icon="groups" className="text-black text-4xl" />
-                <span className="font-black text-2xl text-black">1.000+ Peternak</span>
+                <MaterialIcon icon="verified" className="text-black text-3xl" />
+                <span className="font-black text-lg text-black">Menjaga Amanah Ibadah</span>
               </div>
 
               <div
-                className="flex flex-col gap-2 p-4 bg-[#fffbef] border-2 border-black shadow-[4px_4px_0px_0px_#000000] hover:bg-[#ffafcc] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_#000000] transition-all"
+                className="flex flex-col gap-2 p-4 bg-[#bddcee] border-2 border-black shadow-[4px_4px_0px_0px_#000000]"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                <MaterialIcon icon="location_on" className="text-black text-4xl" />
-                <span className="font-black text-2xl text-black">50+ Desa</span>
+                <MaterialIcon icon="public" className="text-black text-3xl" />
+                <span className="font-black text-lg text-black">Menghadirkan Qurban yang Berdampak bagi Indonesia</span>
               </div>
             </div>
           </div>

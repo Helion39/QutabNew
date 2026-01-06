@@ -9,7 +9,7 @@ export default function ProductsPreview() {
     {
       name: 'Sapi',
       weight: '220-250 kg',
-      price: 'Rp 21.000.000',
+      price: 'Rp 13.293.000',
       unit: '/ekor',
       image: 'https://images.unsplash.com/photo-1614379350905-fe1c7838e0f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicm93biUyMGNvdyUyMGxpdmVzdG9ja3xlbnwxfHx8fDE3NjU3OTc3MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
       bgColor: 'bg-white'
@@ -17,7 +17,7 @@ export default function ProductsPreview() {
     {
       name: 'Kambing',
       weight: '25-28 kg',
-      price: 'Rp 2.500.000',
+      price: 'Rp 1.899.000',
       unit: '/ekor',
       badge: 'Paling Laris',
       image: 'https://images.unsplash.com/photo-1649558008717-e1b9e815b906?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicm93biUyMGdvYXQlMjBmYXJtfGVufDF8fHx8MTc2NTc5NzcyMnww&ixlib=rb-4.1.0&q=80&w=1080',
@@ -26,7 +26,7 @@ export default function ProductsPreview() {
     {
       name: 'Domba',
       weight: '28-32 kg',
-      price: 'Rp 2.800.000',
+      price: 'Rp 1.899.000',
       unit: '/ekor',
       image: 'https://images.unsplash.com/photo-1484557985045-edf25e08da73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80',
       bgColor: 'bg-white'
@@ -35,7 +35,7 @@ export default function ProductsPreview() {
     {
       name: 'Sapi 1/7',
       weight: '220-250 kg (Utuh)',
-      price: 'Rp 3.000.000',
+      price: 'Rp 1.899.000',
       unit: '/bagian',
       image: 'https://images.unsplash.com/photo-1614379350905-fe1c7838e0f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicm93biUyMGNvdyUyMGxpdmVzdG9ja3xlbnwxfHx8fDE3NjU3OTc3MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080',
       bgColor: 'bg-white'
