@@ -63,6 +63,7 @@ EMAIL_HOST_PASSWORD=xxxx-xxxx-xxxx-xxxx
 ### 3️⃣ Registration Flow: User Buat Password Sendiri ✅
 
 ```
+REGISTRATION:
 1. User isi form (email, password, nama, WA, link sosmed)
 2. Akun dibuat dengan status PENDING
 3. User lihat halaman "Menunggu Persetujuan"
@@ -71,6 +72,55 @@ EMAIL_HOST_PASSWORD=xxxx-xxxx-xxxx-xxxx
 6. Admin approve/reject
 7. User terima email hasil
 8. Jika approved → Login dengan password yang sudah dibuat
+```
+
+---
+
+### 3️⃣.1 Login Flow: Status-Based Redirect ✅
+
+```
+LOGIN:
+1. User masuk ke /affiliate/login
+2. User masukkan email + password (yang dibuat saat registrasi)
+3. Sistem cek status akun:
+
+   ┌─────────────────┐
+   │ STATUS = ?      │
+   └────────┬────────┘
+            │
+   ┌────────┼────────┬────────────────┐
+   ▼        ▼        ▼                ▼
+PENDING  APPROVED  APPROVED       REJECTED
+(always) (first    (subsequent    
+         login)    logins)        
+   │        │        │                │
+   ▼        ▼        ▼                ▼
+/pending /approved /dashboard    /rejected
+         (1x only)  (always)
+```
+
+**PENTING:**
+- User PENDING bisa login kapan saja untuk cek status (tidak perlu register ulang)
+- User APPROVED melihat halaman "Selamat! Anda Diterima" HANYA SEKALI (first login after approval)
+- Login berikutnya langsung ke /dashboard
+- User REJECTED melihat halaman penolakan dengan alasan
+
+---
+
+### 3️⃣.2 Status-Based Pages ✅
+
+| Status | Page | When Shown |
+|--------|------|------------|
+| **PENDING** | `/affiliate/pending` | Setiap kali login selama masih pending |
+| **APPROVED (first login)** | `/affiliate/approved` | HANYA SEKALI setelah disetujui |
+| **APPROVED (subsequent)** | `/affiliate/dashboard` | Setiap login setelah first login |
+| **REJECTED** | `/affiliate/rejected` | Setiap kali login setelah ditolak |
+
+**Implementasi "first login" detection:**
+```
+Database field: `first_login_after_approval` (boolean)
+- Default: true (saat admin approve)
+- Set to false: setelah user melihat halaman /approved
 ```
 
 ---

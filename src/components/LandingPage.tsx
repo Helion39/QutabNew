@@ -13,6 +13,7 @@ import SocialMediaSection from './SocialMediaSection';
 import GallerySection from './GallerySection';
 import TestimonySection from './TestimonySection';
 import FAQ from './FAQ';
+import AffiliateSection from './AffiliateSection';
 import Footer from './Footer';
 
 interface LandingPageProps {
@@ -70,6 +71,8 @@ export default function LandingPage({ isLoggedIn }: LandingPageProps) {
       <div data-aos="fade-up">
         <FAQ />
       </div>
+      {/* Affiliate Invitation */}
+      <AffiliateSection />
       <Footer />
     </div>
   );

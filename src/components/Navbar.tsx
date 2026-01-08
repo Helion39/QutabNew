@@ -21,24 +21,24 @@ export default function Navbar({ isLoggedIn }: NavbarProps) {
 
   return (
     <div className="sticky top-0 z-50 w-full bg-[#fffbef] border-b-4 border-black">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
+      <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-6 lg:px-8">
         <div className="flex items-center gap-4">
           {/* Partner Logos */}
           <div className="hidden lg:flex items-center gap-3 pr-4 border-r-2 border-black">
             <img
               src="/logo_mnt.webp"
               alt="Masjid Nurul Taqwa"
-              className="h-10 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
             <img
               src="/logo_indosat_zis.webp"
               alt="ZIS Indosat"
-              className="h-10 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
             <img
               src="/logo_zis.png"
               alt="ZIS Logo"
-              className="h-10 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
           </div>
 
@@ -47,39 +47,39 @@ export default function Navbar({ isLoggedIn }: NavbarProps) {
             <img
               src="/Logo_Qutab.png"
               alt="Qutab"
-              className="h-12 w-auto object-contain"
+              className="h-14 w-auto object-contain"
             />
           </div>
         </div>
 
         <div className="hidden md:flex items-center gap-8">
           <a
-            className="text-black text-sm font-bold uppercase hover:bg-[#ffafcc] px-2 py-1 border-2 border-transparent hover:border-black transition-all"
-            href="#about"
+            className="text-black text-sm font-bold uppercase hover:bg-[#ffafcc] px-2 py-1 border-2 border-transparent hover:border-black transition-all cursor-pointer"
+            onClick={() => handleNavClick('#about')}
           >
             Tentang Kami
           </a>
           <a
-            className="text-black text-sm font-bold uppercase hover:bg-[#ffafcc] px-2 py-1 border-2 border-transparent hover:border-black transition-all"
-            href="#products"
+            className="text-black text-sm font-bold uppercase hover:bg-[#ffafcc] px-2 py-1 border-2 border-transparent hover:border-black transition-all cursor-pointer"
+            onClick={() => handleNavClick('#products')}
           >
             Produk
           </a>
           <a
-            className="text-black text-sm font-bold uppercase hover:bg-[#ffafcc] px-2 py-1 border-2 border-transparent hover:border-black transition-all"
-            href="#how-to-order"
+            className="text-black text-sm font-bold uppercase hover:bg-[#ffafcc] px-2 py-1 border-2 border-transparent hover:border-black transition-all cursor-pointer"
+            onClick={() => handleNavClick('#how-to-order')}
           >
             Cara Pesan
           </a>
           <a
-            className="text-black text-sm font-bold uppercase hover:bg-[#ffafcc] px-2 py-1 border-2 border-transparent hover:border-black transition-all"
-            href="#gallery"
+            className="text-black text-sm font-bold uppercase hover:bg-[#ffafcc] px-2 py-1 border-2 border-transparent hover:border-black transition-all cursor-pointer"
+            onClick={() => handleNavClick('#gallery')}
           >
             Galeri
           </a>
           <a
-            className="text-black text-sm font-bold uppercase hover:bg-[#ffafcc] px-2 py-1 border-2 border-transparent hover:border-black transition-all"
-            href="#faq"
+            className="text-black text-sm font-bold uppercase hover:bg-[#ffafcc] px-2 py-1 border-2 border-transparent hover:border-black transition-all cursor-pointer"
+            onClick={() => handleNavClick('#faq')}
           >
             FAQ
           </a>

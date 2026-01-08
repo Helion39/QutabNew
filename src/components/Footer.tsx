@@ -7,6 +7,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 border-b-2 border-white/20 pb-12">
           {/* Brand Column */}
           <div className="md:col-span-1" data-aos="fade-up" data-aos-delay="0">
+            {/* Logo */}
+            <img
+              src="/Logo_Qutab.png"
+              alt="Qutab"
+              className="h-14 w-auto object-contain mb-4"
+            />
             <p className="text-sm text-gray-300 font-mono leading-relaxed mb-6">
               Memfasilitasi Ibadah Anda, memberdayakan peternak, dan memberi makan yang membutuhkan. Berizin dan Terpercaya.
             </p>
@@ -128,14 +134,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Centered Logo */}
-        <div className="flex justify-center py-8">
-          <img
-            src="/Logo_Qutab.png"
-            alt="Qutab"
-            className="h-48 w-auto object-contain"
-          />
-        </div>
+
 
         {/* Bottom Bar */}
         <div className="text-center md:text-left flex flex-col md:flex-row justify-between items-center text-sm font-mono text-gray-500">

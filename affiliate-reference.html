@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Affiliate Section Reference</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff5990",
+                        "secondary": "#1e53cb",
+                        "accent-purple": "#5b1f61",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                    },
+                    boxShadow: {
+                        "neobrutal": "4px 4px 0px 0px #000000",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-display">
+
+    <!-- AFFILIATE SECTION FROM REFERENCE -->
+    <div class="py-20 bg-secondary border-t-8 border-black">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div
+                class="bg-primary border-4 border-black shadow-[12px_12px_0px_0px_#000000] p-8 md:p-12 relative overflow-hidden">
+                <div class="relative z-10 flex flex-col lg:flex-row gap-12 items-center">
+                    <div class="flex-1 space-y-6">
+                        <div
+                            class="inline-block bg-black text-primary px-4 py-2 font-black uppercase tracking-widest text-sm border-2 border-black transform -rotate-2">
+                            Program Affiliator
+                        </div>
+                        <h2 class="text-5xl md:text-6xl font-black text-black uppercase tracking-tighter leading-none">
+                            Jadi Affiliator Qutab, <br />
+                            <span class="text-white bg-accent-purple px-2">Dapatkan Komisi!</span>
+                        </h2>
+                        <p class="text-black text-xl font-bold border-l-4 border-black pl-6 max-w-xl">
+                            Promosikan Qutab dan dapatkan komisi untuk setiap pembelian qurban.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                            <button
+                                class="px-8 py-4 bg-black text-primary text-lg font-black uppercase tracking-wider border-2 border-black shadow-neobrutal hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all">
+                                Daftar Jadi Affiliator
+                            </button>
+                            <a class="flex items-center justify-center px-8 py-4 text-black font-black uppercase tracking-wider hover:underline decoration-4 underline-offset-4 transition-all"
+                                href="#">
+                                Sudah punya akun? Masuk di sini
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-1 w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Card 1: Purple -->
+                            <div
+                                class="bg-accent-purple p-6 border-4 border-black shadow-neobrutal hover:-translate-y-2 transition-transform duration-300 group">
+                                <div
+                                    class="w-14 h-14 bg-secondary border-4 border-black flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
+                                    <span class="material-symbols-outlined text-3xl text-black">payments</span>
+                                </div>
+                                <h3 class="text-xl font-black text-primary uppercase mb-2">01 Komisi Menarik</h3>
+                                <p class="text-primary font-bold text-sm leading-relaxed">Dapatkan komisi untuk setiap
+                                    transaksi sukses dari link referral Anda.</p>
+                            </div>
+                            <!-- Card 2: White (offset down) -->
+                            <div
+                                class="bg-white p-6 border-4 border-black shadow-neobrutal hover:-translate-y-2 transition-transform duration-300 group md:mt-8">
+                                <div
+                                    class="w-14 h-14 bg-primary border-4 border-black flex items-center justify-center mb-4 group-hover:bg-accent-purple group-hover:text-white transition-colors">
+                                    <span
+                                        class="material-symbols-outlined text-3xl text-black group-hover:text-primary">insights</span>
+                                </div>
+                                <h3 class="text-xl font-black text-black uppercase mb-2">02 Dashboard Lengkap</h3>
+                                <p class="text-black font-bold text-sm leading-relaxed">Pantau statistik klik, konversi,
+                                    dan komisi secara real-time.</p>
+                            </div>
+                            <!-- Card 3: Blue (spans 2 cols, centered) -->
+                            <div
+                                class="bg-secondary p-6 border-4 border-black shadow-neobrutal hover:-translate-y-2 transition-transform duration-300 group md:col-span-2 md:w-2/3 md:mx-auto">
+                                <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
+                                    <div
+                                        class="w-14 h-14 bg-black border-4 border-black flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors">
+                                        <span
+                                            class="material-symbols-outlined text-3xl text-primary group-hover:text-black">support_agent</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-black text-primary uppercase mb-1">03 Support Tim</h3>
+                                        <p class="text-primary font-bold text-sm leading-relaxed">Dapatkan bantuan dan
+                                            materi promosi dari tim Qutab.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decorative circles -->
+                <div
+                    class="absolute -bottom-20 -right-20 w-64 h-64 bg-accent-purple rounded-full border-4 border-black z-0 opacity-50">
+                </div>
+                <div
+                    class="absolute -top-20 -left-20 w-64 h-64 bg-secondary rounded-full border-4 border-black z-0 opacity-50">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
