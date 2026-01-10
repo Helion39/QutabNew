@@ -101,10 +101,10 @@ export default function Catalogue() {
 
   const getBadgeColors = (color: string) => {
     const colors: Record<string, string> = {
-      green: 'bg-[#dfdffa] dark:bg-[#bddcee]/30 text-[#bddcee] dark:text-[#dfdffa]',
+      green: 'bg-[#dfdffa] dark:bg-[#bdbef5]/30 text-[#bdbef5] dark:text-[#dfdffa]',
       amber: 'bg-[#ffc7dd] dark:bg-[#ffafcc]/30 text-[#ef9bb8] dark:text-[#ffc7dd]',
-      blue: 'bg-[#bddcee] dark:bg-[#bddcee]/30 text-white dark:text-[#dfdffa]',
-      purple: 'bg-[#dfdffa] dark:bg-[#bddcee]/30 text-[#bddcee] dark:text-[#dfdffa]',
+      blue: 'bg-[#bdbef5] dark:bg-[#bdbef5]/30 text-white dark:text-[#dfdffa]',
+      purple: 'bg-[#dfdffa] dark:bg-[#bdbef5]/30 text-[#bdbef5] dark:text-[#dfdffa]',
       gray: 'bg-gray-100 dark:bg-gray-800 text-gray-400'
     };
     return colors[color] || colors.green;
@@ -123,7 +123,7 @@ export default function Catalogue() {
               Pilih hewan kurban Anda dari peternak lokal terpercaya. Semua hewan diperiksa kesehatannya dan sesuai syariah.
             </p>
           </div>
-          <div className="flex items-center gap-2 bg-white dark:bg-[#3d2531] px-3 py-1.5 rounded-lg border border-[#bddcee]/20 dark:border-gray-700 shadow-sm">
+          <div className="flex items-center gap-2 bg-white dark:bg-[#3d2531] px-3 py-1.5 rounded-lg border border-[#bdbef5]/20 dark:border-gray-700 shadow-sm">
             <span className="text-xs font-semibold text-[#7d5a6a] dark:text-gray-400">SALDO:</span>
             <span className="text-sm font-bold text-[#4a2c3a] dark:text-white">Rp 5.250.000</span>
             <button className="size-6 bg-[#ffafcc] rounded flex items-center justify-center hover:bg-[#ef9bb8] transition-colors text-white">
@@ -202,7 +202,7 @@ export default function Catalogue() {
                 {/* Badge */}
                 {product.badge === 'verified' && (
                   <div className="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur px-2 py-1 rounded-md flex items-center gap-1 shadow-sm pointer-events-none">
-                    <MaterialIcon icon="verified" className="text-[14px] text-[#bddcee]" />
+                    <MaterialIcon icon="verified" className="text-[14px] text-[#bdbef5]" />
                     <span className="text-xs font-bold text-gray-800 dark:text-white">Peternak Terverifikasi</span>
                   </div>
                 )}
@@ -216,7 +216,7 @@ export default function Catalogue() {
                 {/* Out of Stock Overlay */}
                 {!product.inStock && (
                   <div className="absolute inset-0 bg-white/50 dark:bg-black/50 flex items-center justify-center">
-                    <span className="bg-black/70 text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wide">
+                    <span className="bg-black/70 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
                       Stok Habis
                     </span>
                   </div>

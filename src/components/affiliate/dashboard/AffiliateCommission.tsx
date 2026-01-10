@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import MaterialIcon from '../../../components/MaterialIcon';
+import MaterialIcon from '../../MaterialIcon';
 
 export default function AffiliateCommission() {
   const [requestAmount, setRequestAmount] = useState('');
@@ -152,17 +152,15 @@ export default function AffiliateCommission() {
               </p>
             </div>
 
-            <div>
-              <label className="block text-sm font-bold text-transparent mb-3" aria-hidden="true">
-                &nbsp;
-              </label>
+            <div className="flex flex-col justify-end">
               <button
                 onClick={handleRequestPayout}
                 disabled={!canRequestPayout}
-                className={`w-full px-6 py-3 rounded-lg font-bold text-sm transition-colors shadow-sm flex items-center justify-center gap-2 ${canRequestPayout
+                className={`w-full px-6 py-3.5 rounded-lg font-bold text-sm transition-colors shadow-sm flex items-center justify-center gap-2 ${
+                  canRequestPayout
                     ? 'bg-[#bdbef5] hover:bg-[#9b9ef5] text-white'
                     : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                  }`}
+                }`}
               >
                 <MaterialIcon icon="send" className="text-[20px]" />
                 {canRequestPayout ? 'Ajukan Penarikan' : 'Saldo Minimum Belum Tercapai'}
@@ -233,12 +231,13 @@ export default function AffiliateCommission() {
                   </td>
                   <td className="py-4 px-4 text-sm text-[#7d5a6a] dark:text-gray-400">{payout.method}</td>
                   <td className="py-4 px-4 text-center">
-                    <span className={`inline-flex px-3 py-1 rounded-full text-xs font-bold ${payout.status === 'Dibayar'
-                      ? 'bg-green-100 text-green-700'
-                      : payout.status === 'Processing'
+                    <span className={`inline-flex px-3 py-1 rounded-full text-xs font-bold ${
+                      payout.status === 'Dibayar'
+                        ? 'bg-green-100 text-green-700'
+                        : payout.status === 'Processing'
                         ? 'bg-blue-100 text-blue-700'
                         : 'bg-yellow-100 text-yellow-700'
-                      }`}>
+                    }`}>
                       {payout.status}
                     </span>
                   </td>

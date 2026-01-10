@@ -15,7 +15,7 @@ export default function AffiliateLogin({ setIsAffiliateLoggedIn }: AffiliateLogi
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-
+    
     setFormData(prev => ({
       ...prev,
       [name]: value
@@ -49,14 +49,14 @@ export default function AffiliateLogin({ setIsAffiliateLoggedIn }: AffiliateLogi
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
+    
     if (validateForm()) {
       // Here you would normally authenticate with your backend
       console.log('Affiliate login:', formData);
-
-      // Set logged in state and navigate
-      setIsAffiliateLoggedIn(true);
+      
+      // Navigate to affiliate dashboard (to be created)
       navigate('/affiliate/dashboard');
+      setIsAffiliateLoggedIn(true);
     }
   };
 
@@ -95,8 +95,9 @@ export default function AffiliateLogin({ setIsAffiliateLoggedIn }: AffiliateLogi
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border-4 border-black font-bold focus:outline-none focus:ring-4 focus:ring-[#ffafcc] ${errors.email ? 'border-red-500' : ''
-                  }`}
+                className={`w-full px-4 py-3 border-4 border-black font-bold focus:outline-none focus:ring-4 focus:ring-[#ffafcc] ${
+                  errors.email ? 'border-red-500' : ''
+                }`}
               />
               {errors.email && (
                 <p className="mt-1 text-xs font-bold text-red-500">{errors.email}</p>
@@ -114,8 +115,9 @@ export default function AffiliateLogin({ setIsAffiliateLoggedIn }: AffiliateLogi
                 name="password"
                 value={formData.password}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border-4 border-black font-bold focus:outline-none focus:ring-4 focus:ring-[#ffafcc] ${errors.password ? 'border-red-500' : ''
-                  }`}
+                className={`w-full px-4 py-3 border-4 border-black font-bold focus:outline-none focus:ring-4 focus:ring-[#ffafcc] ${
+                  errors.password ? 'border-red-500' : ''
+                }`}
               />
               {errors.password && (
                 <p className="mt-1 text-xs font-bold text-red-500">{errors.password}</p>

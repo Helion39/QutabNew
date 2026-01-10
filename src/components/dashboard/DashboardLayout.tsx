@@ -37,11 +37,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         <nav className="flex-1 px-4 py-4 flex flex-col gap-2 overflow-y-auto">
           <Link
             to="/dashboard"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
-              isActive('/dashboard')
-                ? 'bg-[#ffe1ed] dark:bg-[#ffafcc]/20 text-[#ef9bb8] dark:text-white font-semibold'
-                : 'hover:bg-[#ffe1ed] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-            }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/dashboard')
+              ? 'bg-[#ffe1ed] dark:bg-[#ffafcc]/20 text-[#ef9bb8] dark:text-white font-semibold'
+              : 'hover:bg-[#ffe1ed] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+              }`}
           >
             <MaterialIcon
               icon="dashboard"
@@ -52,11 +51,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
           <Link
             to="/dashboard/catalogue"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
-              isActive('/dashboard/catalogue')
-                ? 'bg-[#ffe1ed] dark:bg-[#ffafcc]/20 text-[#ef9bb8] dark:text-white font-semibold'
-                : 'hover:bg-[#ffe1ed] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-            }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/dashboard/catalogue')
+              ? 'bg-[#ffe1ed] dark:bg-[#ffafcc]/20 text-[#ef9bb8] dark:text-white font-semibold'
+              : 'hover:bg-[#ffe1ed] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+              }`}
           >
             <MaterialIcon
               icon="storefront"
@@ -67,11 +65,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
           <Link
             to="/dashboard/wishlist"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
-              isActive('/dashboard/wishlist')
-                ? 'bg-[#ffe1ed] dark:bg-[#ffafcc]/20 text-[#ef9bb8] dark:text-white font-semibold'
-                : 'hover:bg-[#ffe1ed] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-            }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/dashboard/wishlist')
+              ? 'bg-[#ffe1ed] dark:bg-[#ffafcc]/20 text-[#ef9bb8] dark:text-white font-semibold'
+              : 'hover:bg-[#ffe1ed] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+              }`}
           >
             <MaterialIcon
               icon="favorite"
@@ -82,11 +79,10 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
           <Link
             to="/dashboard/payment"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
-              isActive('/dashboard/payment')
-                ? 'bg-[#ffe1ed] dark:bg-[#ffafcc]/20 text-[#ef9bb8] dark:text-white font-semibold'
-                : 'hover:bg-[#ffe1ed] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-            }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/dashboard/payment')
+              ? 'bg-[#ffe1ed] dark:bg-[#ffafcc]/20 text-[#ef9bb8] dark:text-white font-semibold'
+              : 'hover:bg-[#ffe1ed] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+              }`}
           >
             <MaterialIcon
               icon="receipt_long"
@@ -95,27 +91,39 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             <span className="font-medium text-sm">Qurban Saya / Pembayaran</span>
           </Link>
 
-          <div className="mt-6 px-4">
+          <div className="mt-6 px-4 flex flex-col gap-2">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Pengaturan</p>
-            <a
-              href="#"
-              className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-[#ffe1ed] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300 transition-colors group"
+            <Link
+              to="/dashboard/profile"
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/dashboard/profile')
+                ? 'bg-[#ffe1ed] dark:bg-[#ffafcc]/20 text-[#ef9bb8] dark:text-white font-semibold'
+                : 'hover:bg-[#ffe1ed] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+                }`}
             >
-              <MaterialIcon icon="settings" className="group-hover:text-[#ffafcc]" />
+              <MaterialIcon
+                icon="settings"
+                className={isActive('/dashboard/profile') ? 'filled text-[#7d5a6a] dark:text-white' : 'group-hover:text-[#ffafcc]'}
+              />
               <span className="font-medium text-sm">Pengaturan Akun</span>
-            </a>
-            <a
-              href="#"
-              className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-[#ffe1ed] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300 transition-colors group"
+            </Link>
+            <Link
+              to="/dashboard/help"
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/dashboard/help')
+                ? 'bg-[#ffe1ed] dark:bg-[#ffafcc]/20 text-[#ef9bb8] dark:text-white font-semibold'
+                : 'hover:bg-[#ffe1ed] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+                }`}
             >
-              <MaterialIcon icon="help" className="group-hover:text-[#ffafcc]" />
+              <MaterialIcon
+                icon="help"
+                className={isActive('/dashboard/help') ? 'filled text-[#7d5a6a] dark:text-white' : 'group-hover:text-[#ffafcc]'}
+              />
               <span className="font-medium text-sm">Pusat Bantuan</span>
-            </a>
+            </Link>
           </div>
         </nav>
 
         {/* User Profile Footer */}
-        <div className="p-4 border-t border-gray-100 dark:border-gray-800 bg-[#fffbef] dark:bg-black/20">
+        <div className="p-4 border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-black/20">
           <a href="#" className="flex items-center gap-3 mb-4 hover:bg-white/50 dark:hover:bg-white/5 p-2 rounded-lg transition-colors">
             <div
               className="size-10 rounded-full bg-cover bg-center border-2 border-white dark:border-gray-700 shadow-sm"
@@ -153,6 +161,8 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                 {location.pathname === '/dashboard/catalogue' && 'Katalog'}
                 {location.pathname === '/dashboard/wishlist' && 'Daftar Keinginan'}
                 {location.pathname === '/dashboard/payment' && 'Pembayaran'}
+                {location.pathname === '/dashboard/settings' && 'Pengaturan Akun'}
+                {location.pathname === '/dashboard/help' && 'Pusat Bantuan'}
               </span>
             </div>
           </div>
@@ -160,11 +170,11 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           {/* Search & Actions */}
           <div className="flex items-center gap-4">
             <div className="relative w-80 hidden md:block group">
-              <button className="absolute left-3 top-1/2 -translate-y-1/2 text-[#bddcee] hover:text-[#ffafcc] transition-colors">
+              <button className="absolute left-3 top-1/2 -translate-y-1/2 text-[#bdbef5] hover:text-[#ffafcc] transition-colors">
                 <MaterialIcon icon="search" />
               </button>
               <input
-                className="w-full pl-10 pr-4 h-10 rounded-lg bg-[#ffe1ed]/30 dark:bg-[#3d2531] border border-transparent focus:bg-white focus:border-[#bddcee] dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#bddcee]/50 text-sm text-[#4a2c3a] dark:text-white placeholder-[#7d5a6a]/50 transition-all"
+                className="w-full pl-10 pr-4 h-10 rounded-lg bg-[#ffe1ed]/30 dark:bg-[#3d2531] border border-transparent focus:bg-white focus:border-[#bdbef5] dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-[#bdbef5]/50 text-sm text-[#4a2c3a] dark:text-white placeholder-[#7d5a6a]/50 transition-all"
                 placeholder="Cari hewan (misal: Kambing Tipe A)..."
                 type="text"
                 value={searchQuery}

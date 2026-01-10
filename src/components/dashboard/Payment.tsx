@@ -34,7 +34,7 @@ export default function Payment() {
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed':
-        return 'bg-[#bddcee]/20 dark:bg-[#bddcee]/30 text-[#bddcee] dark:text-[#dfdffa]';
+        return 'bg-[#bdbef5]/20 dark:bg-[#bdbef5]/30 text-[#bdbef5] dark:text-[#dfdffa]';
       case 'processing':
         return 'bg-[#ffc7dd]/20 dark:bg-[#ffafcc]/30 text-[#ef9bb8] dark:text-[#ffc7dd]';
       case 'pending':

@@ -1,4 +1,4 @@
-import MaterialIcon from '../../../components/MaterialIcon';
+import MaterialIcon from '../../MaterialIcon';
 
 export default function AffiliateDashboardHome() {
   return (

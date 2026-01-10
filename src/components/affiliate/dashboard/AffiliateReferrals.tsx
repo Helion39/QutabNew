@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import MaterialIcon from '../../../components/MaterialIcon';
+import MaterialIcon from '../../MaterialIcon';
 
 export default function AffiliateReferrals() {
   const [statusFilter, setStatusFilter] = useState('all');

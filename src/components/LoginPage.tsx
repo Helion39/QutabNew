@@ -80,7 +80,7 @@ export default function LoginPage({ setIsLoggedIn }: LoginPageProps) {
               backgroundImage: 'url("https://images.unsplash.com/photo-1679959350683-d503e8becfee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWElMjByaWNlJTIwZmllbGRzJTIwY2F0dGxlfGVufDF8fHx8MTc2NTc5NzcyMXww&ixlib=rb-4.1.0&q=80&w=1080")'
             }}
           />
-          <div className="absolute inset-0 bg-[#bddcee]/40 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-[#bdbef5]/40 mix-blend-multiply"></div>
 
           <div className="relative z-10 w-full max-w-lg bg-white border-4 border-black p-8 shadow-[8px_8px_0px_0px_#000000] rotate-1">
             <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#ffafcc] border-2 border-black flex items-center justify-center shadow-[3px_3px_0px_0px_#000000] z-20">
@@ -88,7 +88,7 @@ export default function LoginPage({ setIsLoggedIn }: LoginPageProps) {
             </div>
             <h1 className="text-4xl font-black tracking-tighter mb-4 leading-none uppercase text-black">
               Memberdayakan Petani,<br />
-              <span className="text-[#477022]">Memfasilitasi Ibadah.</span>
+              <span className="text-[#ffafcc]">Memfasilitasi Ibadah.</span>
             </h1>
             <p className="text-lg text-black font-medium mb-8 leading-relaxed border-l-4 border-[#ffafcc] pl-4">
               Bergabunglah dengan ribuan Muslim Indonesia dalam menunaikan Qurban dengan aman dan transparan.
@@ -124,7 +124,7 @@ export default function LoginPage({ setIsLoggedIn }: LoginPageProps) {
               <h1 className="text-black text-2xl sm:text-3xl lg:text-4xl font-black uppercase leading-tight tracking-tighter">
                 {isRegisterMode ? 'Buat Akun' : 'Selamat Datang'}
               </h1>
-              <p className="text-[#477022] text-sm font-bold">
+              <p className="text-[#ffafcc] text-sm font-bold">
                 {isRegisterMode
                   ? 'Daftar untuk mengelola Qurban Anda.'
                   : 'Masuk untuk mengelola Qurban Anda.'}
@@ -178,7 +178,7 @@ export default function LoginPage({ setIsLoggedIn }: LoginPageProps) {
                   <p className="text-black text-sm font-bold uppercase">Kata Sandi</p>
                   {!isRegisterMode && (
                     <a
-                      className="text-xs font-bold text-[#477022] hover:bg-[#cecd34] px-1 border border-transparent hover:border-black transition-colors"
+                      className="text-xs font-bold text-[#bdbef5] hover:bg-[#bdbef5]/20 px-1 border border-transparent hover:border-black transition-colors"
                       href="#"
                     >
                       Lupa Kata Sandi?
@@ -235,7 +235,7 @@ export default function LoginPage({ setIsLoggedIn }: LoginPageProps) {
               {/* Remember Me / Terms */}
               <div className="flex items-center gap-3 py-1">
                 <input
-                  className="h-5 w-5 border-2 border-black text-[#477022] focus:ring-0 rounded-none cursor-pointer"
+                  className="h-5 w-5 border-2 border-black text-[#ffafcc] focus:ring-0 rounded-none cursor-pointer"
                   id="remember"
                   type="checkbox"
                   checked={rememberMe}
@@ -249,7 +249,7 @@ export default function LoginPage({ setIsLoggedIn }: LoginPageProps) {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="flex w-full cursor-pointer items-center justify-center h-12 bg-[#477022] hover:bg-[#648828] text-white border-2 border-black text-base font-black uppercase tracking-wider shadow-[5px_5px_0px_0px_#000000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:scale-[0.99]"
+                className="flex w-full cursor-pointer items-center justify-center h-12 bg-[#ffafcc] hover:bg-[#ff8fb5] text-black border-2 border-black text-base font-black uppercase tracking-wider shadow-[5px_5px_0px_0px_#000000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:scale-[0.99]"
               >
                 <span>{isRegisterMode ? 'BUAT AKUN' : 'MASUK'}</span>
               </button>
@@ -257,7 +257,7 @@ export default function LoginPage({ setIsLoggedIn }: LoginPageProps) {
               {/* Divider */}
               <div className="relative flex py-2 items-center">
                 <div className="flex-grow border-t-2 border-black"></div>
-                <span className="flex-shrink-0 mx-3 text-black text-xs font-black uppercase bg-[#cecd34] px-2 py-1 border-2 border-black">
+                <span className="flex-shrink-0 mx-3 text-black text-xs font-black uppercase bg-[#bdbef5] px-2 py-1 border-2 border-black">
                   Atau lanjutkan dengan
                 </span>
                 <div className="flex-grow border-t-2 border-black"></div>
@@ -306,11 +306,11 @@ export default function LoginPage({ setIsLoggedIn }: LoginPageProps) {
             <div className="text-center pt-4">
               <p className="text-xs font-bold text-gray-500">
                 Dilindungi oleh reCAPTCHA dan tunduk pada{' '}
-                <a className="underline hover:bg-[#cecd34] text-black" href="#">
+                <a className="underline hover:bg-[#ffafcc]/20 text-black" href="#">
                   Kebijakan Privasi
                 </a>{' '}
                 dan{' '}
-                <a className="underline hover:bg-[#cecd34] text-black" href="#">
+                <a className="underline hover:bg-[#ffafcc]/20 text-black" href="#">
                   Ketentuan Layanan
                 </a>{' '}
                 Google.

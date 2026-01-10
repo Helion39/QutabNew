@@ -4,6 +4,8 @@ import Catalogue from './dashboard/Catalogue';
 import Wishlist from './dashboard/Wishlist';
 import Payment from './dashboard/Payment';
 import DashboardHome from './dashboard/DashboardHome';
+import HelpCenter from './dashboard/HelpCenter';
+import AccountSettings from './dashboard/AccountSettings';
 
 export default function Dashboard() {
   return (
@@ -13,9 +15,10 @@ export default function Dashboard() {
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/help" element={<HelpCenter />} />
+        <Route path="/profile" element={<AccountSettings />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Routes>
     </DashboardLayout>
   );
 }
-

@@ -31,8 +31,8 @@ export default function DashboardHome() {
 
           <div className="bg-white dark:bg-[#3d2531] rounded-2xl p-6 border border-gray-200 dark:border-gray-800 shadow-sm">
             <div className="flex items-center justify-between mb-4">
-              <div className="size-12 rounded-xl bg-[#bddcee]/20 flex items-center justify-center">
-                <MaterialIcon icon="favorite" className="text-[#bddcee] text-2xl filled" />
+              <div className="size-12 rounded-xl bg-[#bdbef5]/20 flex items-center justify-center">
+                <MaterialIcon icon="favorite" className="text-[#bdbef5] text-2xl filled" />
               </div>
               <span className="text-xs font-semibold text-gray-400 uppercase">Tersimpan</span>
             </div>

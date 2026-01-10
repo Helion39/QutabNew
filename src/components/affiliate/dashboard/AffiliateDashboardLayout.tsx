@@ -1,6 +1,6 @@
 import { ReactNode, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import MaterialIcon from '../../../components/MaterialIcon';
+import MaterialIcon from '../../MaterialIcon';
 
 interface AffiliateDashboardLayoutProps {
   children: ReactNode;
@@ -34,136 +34,142 @@ export default function AffiliateDashboardLayout({ children }: AffiliateDashboar
           </div>
         </div>
 
-
         {/* Navigation */}
         <nav className="flex-1 px-4 py-4 flex flex-col gap-2 overflow-y-auto">
           <Link
             to="/affiliate/dashboard"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/affiliate/dashboard')
-              ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
-              : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-              }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
+              isActive('/affiliate/dashboard')
+                ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
+                : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+            }`}
           >
             <MaterialIcon
               icon="dashboard"
-              className={isActive('/affiliate/dashboard') ? 'filled text-[#7d5a6a] dark:text-white' : 'group-hover:text-[#bdbef5]'}
+              className={isActive('/affiliate/dashboard') ? 'filled text-black dark:text-white' : 'group-hover:text-[#bdbef5]'}
             />
             <span className="font-medium text-sm">Dasbor</span>
           </Link>
 
           <Link
             to="/affiliate/dashboard/banner-link"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/affiliate/dashboard/banner-link')
-              ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
-              : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-              }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
+              isActive('/affiliate/dashboard/banner-link')
+                ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
+                : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+            }`}
           >
             <MaterialIcon
               icon="link"
-              className={isActive('/affiliate/dashboard/banner-link') ? 'filled text-[#7d5a6a] dark:text-white' : 'group-hover:text-[#bdbef5]'}
+              className={isActive('/affiliate/dashboard/banner-link') ? 'filled text-black dark:text-white' : 'group-hover:text-[#bdbef5]'}
             />
             <span className="font-medium text-sm">Banner dan Link</span>
           </Link>
 
           <Link
             to="/affiliate/dashboard/statistik"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/affiliate/dashboard/statistik')
-              ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
-              : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-              }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
+              isActive('/affiliate/dashboard/statistik')
+                ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
+                : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+            }`}
           >
             <MaterialIcon
               icon="bar_chart"
-              className={isActive('/affiliate/dashboard/statistik') ? 'filled text-[#7d5a6a] dark:text-white' : 'group-hover:text-[#bdbef5]'}
+              className={isActive('/affiliate/dashboard/statistik') ? 'filled text-black dark:text-white' : 'group-hover:text-[#bdbef5]'}
             />
             <span className="font-medium text-sm">Statistik</span>
           </Link>
 
           <Link
             to="/affiliate/dashboard/rekening"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/affiliate/dashboard/rekening')
-              ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
-              : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-              }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
+              isActive('/affiliate/dashboard/rekening')
+                ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
+                : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+            }`}
           >
             <MaterialIcon
               icon="account_balance"
-              className={isActive('/affiliate/dashboard/rekening') ? 'filled text-[#7d5a6a] dark:text-white' : 'group-hover:text-[#bdbef5]'}
+              className={isActive('/affiliate/dashboard/rekening') ? 'filled text-black dark:text-white' : 'group-hover:text-[#bdbef5]'}
             />
             <span className="font-medium text-sm">Rekening Pembayaran Komisi</span>
           </Link>
 
           <Link
             to="/affiliate/dashboard/commission"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/affiliate/dashboard/commission')
-              ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
-              : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-              }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
+              isActive('/affiliate/dashboard/commission')
+                ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
+                : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+            }`}
           >
             <MaterialIcon
               icon="payments"
-              className={isActive('/affiliate/dashboard/commission') ? 'filled text-[#7d5a6a] dark:text-white' : 'group-hover:text-[#bdbef5]'}
+              className={isActive('/affiliate/dashboard/commission') ? 'filled text-black dark:text-white' : 'group-hover:text-[#bdbef5]'}
             />
             <span className="font-medium text-sm">Pembayaran Komisi</span>
           </Link>
 
           <Link
             to="/affiliate/dashboard/leads"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/affiliate/dashboard/leads')
-              ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
-              : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-              }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
+              isActive('/affiliate/dashboard/leads')
+                ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
+                : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+            }`}
           >
             <MaterialIcon
               icon="people"
-              className={isActive('/affiliate/dashboard/leads') ? 'filled text-[#7d5a6a] dark:text-white' : 'group-hover:text-[#bdbef5]'}
+              className={isActive('/affiliate/dashboard/leads') ? 'filled text-black dark:text-white' : 'group-hover:text-[#bdbef5]'}
             />
             <span className="font-medium text-sm">Leads Anda</span>
           </Link>
 
           <Link
             to="/affiliate/dashboard/kupon"
-            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/affiliate/dashboard/kupon')
-              ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
-              : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-              }`}
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
+              isActive('/affiliate/dashboard/kupon')
+                ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
+                : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
+            }`}
           >
             <MaterialIcon
               icon="confirmation_number"
-              className={isActive('/affiliate/dashboard/kupon') ? 'filled text-[#7d5a6a] dark:text-white' : 'group-hover:text-[#bdbef5]'}
+              className={isActive('/affiliate/dashboard/kupon') ? 'filled text-black dark:text-white' : 'group-hover:text-[#bdbef5]'}
             />
             <span className="font-medium text-sm">Kupon Diskon</span>
           </Link>
 
-          <div className="mt-6 px-4 flex flex-col gap-2">
-            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Pengaturan</p>
-            <Link
-              to="/affiliate/dashboard/helpdesk"
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/affiliate/dashboard/helpdesk')
+          <Link
+            to="/affiliate/dashboard/helpdesk"
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
+              isActive('/affiliate/dashboard/helpdesk')
                 ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
                 : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-                }`}
-            >
-              <MaterialIcon
-                icon="help"
-                className={isActive('/affiliate/dashboard/helpdesk') ? 'filled text-[#7d5a6a] dark:text-white' : 'group-hover:text-[#bdbef5]'}
-              />
-              <span className="font-medium text-sm">Helpdesk</span>
-            </Link>
-            <Link
-              to="/affiliate/dashboard/profile"
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${isActive('/affiliate/dashboard/profile')
+            }`}
+          >
+            <MaterialIcon
+              icon="help"
+              className={isActive('/affiliate/dashboard/helpdesk') ? 'filled text-black dark:text-white' : 'group-hover:text-[#bdbef5]'}
+            />
+            <span className="font-medium text-sm">Helpdesk</span>
+          </Link>
+
+          <Link
+            to="/affiliate/dashboard/profile"
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors group ${
+              isActive('/affiliate/dashboard/profile')
                 ? 'bg-[#e1e4ff] dark:bg-[#bdbef5]/20 text-[#4a2c3a] dark:text-white font-semibold'
                 : 'hover:bg-[#e1e4ff] dark:hover:bg-gray-800 text-[#7d5a6a] dark:text-gray-300'
-                }`}
-            >
-              <MaterialIcon
-                icon="person"
-                className={isActive('/affiliate/dashboard/profile') ? 'filled text-[#7d5a6a] dark:text-white' : 'group-hover:text-[#bdbef5]'}
-              />
-              <span className="font-medium text-sm">Profil Member</span>
-            </Link>
-          </div>
+            }`}
+          >
+            <MaterialIcon
+              icon="person"
+              className={isActive('/affiliate/dashboard/profile') ? 'filled text-black dark:text-white' : 'group-hover:text-[#bdbef5]'}
+            />
+            <span className="font-medium text-sm">Profil Member</span>
+          </Link>
         </nav>
 
         {/* User Profile Footer */}
